@@ -1,0 +1,132 @@
+﻿<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:KursApp.ViewModels"
+    x:Class="KursApp.MainPage"
+    BackgroundColor="White">
+    
+
+    <ContentPage.BindingContext>
+        <viewmodels:KursViewModel />
+    </ContentPage.BindingContext>
+    
+            
+        <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="20">
+
+            <!-- Header Image -->
+            <Frame CornerRadius="20"
+       Padding="0"
+       HasShadow="False"
+       IsClippedToBounds="True"
+       Margin="10">
+                <Image Source="bild1.jpg"
+           Aspect="AspectFill"
+           HeightRequest="200"
+                        HorizontalOptions="FillAndExpand"
+          />
+            </Frame>
+
+            <!-- Titel -->
+            <Label Text="FerienPlausch"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#87cd8e"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Die FerienPlausch-App bietet Teilnehmerinnen und Teilnehmern die Möglichkeit, die Stimmungslage zu einzelnen Kursen einfach und anonym zu erfassen. Diese Rückmeldungen unterstützen die Veranstalter bei der Planung und Verbesserung zukünftiger Angebote."
+                   FontSize="14"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="Angebots"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Gray"
+                   HorizontalOptions="Center" />
+
+            <!-- Kurs 1 - Sportkurs -->
+            <Frame CornerRadius="25" HasShadow="True" Padding="0" BackgroundColor="White">
+            <VerticalStackLayout>
+                    <Label Text="Sportkurs"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#87cd8e"
+                           HorizontalOptions="Center" Margin="0,10,0,5" />
+
+                <Frame CornerRadius="20"
+              Padding="0"
+              HasShadow="False"
+              IsClippedToBounds="True"
+              Margin="10">
+                    <Image Source="bild2.jpeg"
+Aspect="AspectFill"
+HeightRequest="150" />
+                </Frame>
+                
+
+                    <Label Text="In diesem Kurs haben die Teilnehmenden die Möglichkeit, ihre Fitness zu verbessern, neue Sportarten kennenzulernen und gemeinsam aktiv zu werden. Egal ob Anfängerin oder Fortgeschrittener – alle sind herzlich willkommen. Im Vordergrund stehen Freude an der Bewegung und das gemeinsame Erleben"
+                           FontSize="13"
+                           Margin="10"
+                           TextColor="Black"
+                           LineBreakMode="WordWrap" />
+                   
+                    <Button Text="Zur Bewertung"
+        Clicked="OnSportkursButtonClicked"
+        Margin="0,0,0,10"
+        BackgroundColor="CornflowerBlue"
+TextColor="White"
+        HeightRequest="30"
+          WidthRequest="200"                  />
+
+
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Kurs 2 - Bastelkurs -->
+            <Frame CornerRadius="25" HasShadow="True" Padding="0" BackgroundColor="White">
+                <VerticalStackLayout>
+                    <Label Text="Bastelkurs"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#87cd8e"
+                           HorizontalOptions="Center" Margin="0,10,0,5" />
+
+                    <Frame CornerRadius="20"
+              Padding="0"
+              HasShadow="False"
+              IsClippedToBounds="True"
+              Margin="10">
+                        <Image Source="bild3.jpg"
+Aspect="AspectFill"
+HeightRequest="150" />
+                    </Frame>
+
+                    <Label Text="Hier können die Teilnehmenden ihrer Fantasie freien Lauf lassen, verschiedene Materialien ausprobieren und eigene Kunstwerke erschaffen. Ob Papier, Holz, Stoff oder Naturmaterialien – im gemeinsamen Basteln steht der Spaß und die Freude am kreativen Tun im Mittelpunkt."
+                           FontSize="13"
+                           Margin="10"
+                           TextColor="Black"
+                           LineBreakMode="WordWrap" />
+                    <Button Text="Zur Bewertung"
+        Clicked="OnSportkursButtonClicked"
+        Margin="0,0,0,10"
+        BackgroundColor="CornflowerBlue"
+TextColor="White"
+        HeightRequest="30"
+          WidthRequest="200"                  />
+                </VerticalStackLayout>
+
+               
+            </Frame>
+            
+            <!-- Navigation-Link -->
+            <Label Text="Alle bisherigen Einträge"
+                   FontSize="13"
+                   TextColor="Blue"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,10" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

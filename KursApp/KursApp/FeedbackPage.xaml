@@ -1,0 +1,112 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KursApp.FeedbackPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+
+            <!-- EK: Kurs Görseli -->
+            <Frame CornerRadius="20"
+Padding="0"
+HasShadow="False"
+IsClippedToBounds="True"
+Margin="10">
+                <Image Source="bild2.jpeg"
+    Aspect="AspectFill"
+    HeightRequest="200"
+                 HorizontalOptions="FillAndExpand"
+   />
+            </Frame>
+
+            <Label Text="Sportkurs"
+       FontSize="24"
+       FontAttributes="Bold"
+       TextColor="#87cd8e"
+       HorizontalOptions="Center" />
+
+            <!-- Kurs Başlığı -->
+            <Label x:Name="CourseTitle"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="DarkGreen"
+                   HorizontalOptions="Center" />
+
+            <!-- Geri Bildirim Sorusu -->
+            <Label Text="Wie war Ihre Erfahrung?"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,10"
+                   TextColor="Black"/>
+
+            <!-- Emoji Butonları -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+                <ImageButton Source="sternemoji.png"
+                             Clicked="OnEmojiButtonClicked"
+                             WidthRequest="40" HeightRequest="40"
+                             BackgroundColor="Transparent"/>
+                <ImageButton Source="smile.png"
+                             Clicked="OnEmojiButtonClicked"
+                             WidthRequest="40" HeightRequest="80"
+                             BackgroundColor="Transparent"/>
+                <ImageButton Source="angry.png"
+                             Clicked="OnEmojiButtonClicked"
+                             WidthRequest="40" HeightRequest="40"
+                             BackgroundColor="Transparent"/>
+            </HorizontalStackLayout>
+
+            <!-- Kurs Açıklaması -->
+            <Label x:Name="CourseDescription"
+                   FontSize="14"
+                   TextColor="Gray"
+                   Margin="0,10,0,10"
+                   HorizontalOptions="Center" />
+
+            <!-- Geri Bildirim Sorusu Açıklaması -->
+            <Label x:Name="QuestionLabel"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Emoji Alanı (eski) -->
+            <HorizontalStackLayout x:Name="EmojiLayout"
+                                   Spacing="15"
+                                   IsVisible="False" />
+            <!-- Gizlendi -->
+
+            <!-- Geri Bildirim Yazı Girişi -->
+            <Entry x:Name="FeedbackEntry"
+                   Placeholder="Ihre Feedback"
+                   BackgroundColor="#EEEEEE"
+                   Margin="0,5,0,5"/>
+
+            <!-- Gönder Butonu -->
+            <Button Text="Absenden"
+                    Clicked="OnSubmitClicked"
+                    BackgroundColor="CornflowerBlue"
+                    TextColor="White"
+                    Margin="0,10,0,10"/>
+
+            <!-- Kurs adı -->
+            <Label x:Name="KursNameLabel"
+                   FontSize="14"
+                   FontAttributes="Italic"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0"/>
+
+            <!-- Diğer bağlantılar -->
+            <Label Text="Alle bisherigen Einträge"
+                   TextColor="Blue"
+                   FontSize="12"
+                   HorizontalOptions="Center" />
+
+            <Label Text="← Zurück zu Angebote"
+                   TextColor="Blue"
+                   FontSize="12"
+                   HorizontalOptions="Center" />
+               
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
