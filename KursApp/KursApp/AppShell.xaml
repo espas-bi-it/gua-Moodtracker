@@ -11,6 +11,11 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+        
+        <ShellContent Title="Sportkurs"
+                  ContentTemplate="{DataTemplate local:SportkursPage}" 
+                  Route="SportkursPage" />
+
 
 
 </Shell>

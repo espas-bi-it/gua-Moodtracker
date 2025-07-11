@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KursApp.BastelkursPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+
+            <!-- EK: Kurs Görseli -->
+            <Frame CornerRadius="20"
+Padding="0"
+HasShadow="False"
+IsClippedToBounds="True"
+Margin="10">
+                <Image Source="bild3.jpg"
+    Aspect="AspectFill"
+    HeightRequest="200"
+                 HorizontalOptions="FillAndExpand"
+   />
+            </Frame>
+
+            <Label Text="Bastelkurs"
+       FontSize="24"
+       FontAttributes="Bold"
+       TextColor="#87cd8e"
+       HorizontalOptions="Center" />
+
+            <!-- Kurs Başlığı -->
+            <Label x:Name="CourseTitle"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="DarkGreen"
+                   HorizontalOptions="Center" />
+
+
+
+            <!-- Geri Bildirim Sorusu -->
+            <Label Text="Hier können die Teilnehmenden ihrer Fantasie freien Lauf lassen, verschiedene Materialien ausprobieren und eigene Kunstwerke erschaffen. Ob Papier, Holz, Stoff oder Naturmaterialien – im gemeinsamen Basteln steht der Spaß und die Freude am kreativen Tun im Mittelpunkt."
+       Margin="10"
+       TextColor="Black"
+       LineBreakMode="WordWrap" 
+                    HorizontalOptions="Center"/>
+
+            <Label Text="📅 Datum: 14.07.2025"
+                   FontSize="14"
+                   TextColor="Black"
+                   Margin="0,20,0,20"
+                    HorizontalOptions="Center"/>
+
+            <Label Text="🕐 Uhrzeit: 17:30 – 19:00"
+                   FontSize="14"
+                   Margin="0,0,0,20"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+
+            <Label Text="👥 Zielgruppe: Erwachsene 18+"
+                   FontSize="14"
+                   Margin="0,0,0,20"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+
+            <Label Text="📍 Ort: Rautistrasse 6 8047 Zürich"
+                   FontSize="14"
+                   Margin="0,0,0,20"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+
+            <!-- Kurs Açıklaması -->
+            <Label x:Name="CourseDescription"
+                   FontSize="14"
+                   TextColor="Gray"
+                   Margin="0,10,0,10"
+                   HorizontalOptions="Center" />
+
+            <!-- Geri Bildirim Sorusu Açıklaması -->
+            <Label x:Name="QuestionLabel"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Emoji Alanı (eski) -->
+            <HorizontalStackLayout x:Name="EmojiLayout"
+                                   Spacing="15"
+                                   IsVisible="False" />
+            <!-- Gizlendi -->
+            <Button Text="← Zurück zu Angebote"
+Clicked="OnZurueck2Clicked"
+FontSize="14"
+TextColor="White"
+BackgroundColor="CornflowerBlue"
+HorizontalOptions="Center"
+Padding="10,5"
+CornerRadius="15"/>
+
+            <!-- Kurs adı -->
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

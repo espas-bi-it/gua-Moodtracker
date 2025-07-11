@@ -48,13 +48,18 @@
             <!-- Kurs 1 - Sportkurs -->
             <Frame CornerRadius="25" HasShadow="True" Padding="0" BackgroundColor="White">
             <VerticalStackLayout>
-                    <Label Text="Sportkurs"
-                           FontSize="18"
-                           FontAttributes="Bold"
-                           TextColor="#87cd8e"
-                           HorizontalOptions="Center" Margin="0,10,0,5" />
+                   
 
-                <Frame CornerRadius="20"
+                    <Button Text="Sportkurs"
+        Clicked="OnSportkursButton2Clicked"
+        Margin="0,10,0,5"
+        BackgroundColor="White"
+        FontAttributes="Bold"
+        FontSize="18"
+TextColor="#87cd8e"
+                         />
+
+                    <Frame CornerRadius="20"
               Padding="0"
               HasShadow="False"
               IsClippedToBounds="True"
@@ -87,11 +92,14 @@ TextColor="White"
             <!-- Kurs 2 - Bastelkurs -->
             <Frame CornerRadius="25" HasShadow="True" Padding="0" BackgroundColor="White">
                 <VerticalStackLayout>
-                    <Label Text="Bastelkurs"
-                           FontSize="18"
-                           FontAttributes="Bold"
-                           TextColor="#87cd8e"
-                           HorizontalOptions="Center" Margin="0,10,0,5" />
+                    <Button Text="Bastelkurs"
+        Clicked="OnBastelkursButtonClicked"
+        Margin="0,10,0,5"
+        BackgroundColor="White"
+        FontAttributes="Bold"
+        FontSize="18"
+TextColor="#87cd8e"
+                         />
 
                     <Frame CornerRadius="20"
               Padding="0"
@@ -120,13 +128,7 @@ TextColor="White"
                
             </Frame>
             
-            <!-- Navigation-Link -->
-            <Label Text="Alle bisherigen Einträge"
-                   FontSize="13"
-                   TextColor="Blue"
-                   HorizontalOptions="Center"
-                   Margin="0,10,0,10" />
-
+          
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

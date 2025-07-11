@@ -30,6 +30,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = KursApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/atifenes.guenes/source/repos/KursApp/KursApp/BastelkursPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = KursApp.BastelkursPage.xaml
+build_metadata.AdditionalFiles.TargetPath = BastelkursPage.xaml
+build_metadata.AdditionalFiles.RelativePath = BastelkursPage.xaml
+
 [C:/Users/atifenes.guenes/source/repos/KursApp/KursApp/FeedbackPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = KursApp.FeedbackPage.xaml
@@ -53,3 +59,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = KursApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/atifenes.guenes/source/repos/KursApp/KursApp/SportkursPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = KursApp.SportkursPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SportkursPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SportkursPage.xaml

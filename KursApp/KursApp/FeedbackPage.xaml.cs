@@ -7,12 +7,14 @@ public partial class FeedbackPage : ContentPage
 {
     private Kurs? course;
 
+    public object KursNameLabel { get; }
+
     public FeedbackPage(string kursName)
     {
         InitializeComponent();
 
         // Örnek olarak sadece kurs adını gösteriyoruz:
-        KursNameLabel.Text = $"Kurs: {kursName}";
+       
     }
  
 
@@ -44,15 +46,21 @@ public partial class FeedbackPage : ContentPage
     private void OnSubmitClicked(object sender, EventArgs e)
     {
         string feedback = FeedbackEntry.Text;
-        DisplayAlert("Danke!", "Ihre Rückmeldung wurde gesendet.", "OK");
+        DisplayAlert("Danke!", "Ihre Rückmeldung wurde gespeichert.", "OK");
     }
 
     private void OnEmojiButtonClicked(object sender, EventArgs e)
     {
         string feedback = FeedbackEntry.Text;
-        DisplayAlert("Danke!", "Ihre Rückmeldung wurde gesendet.", "OK");
+        DisplayAlert("Danke!", "Ihre Rückmeldung wurde gespeichert.", "OK");
     }
-   
+
+    private async void OnZurueckClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//MainPage");
+    }
+
+
 
 
 }

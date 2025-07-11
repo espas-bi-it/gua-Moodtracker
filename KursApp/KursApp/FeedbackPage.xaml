@@ -12,14 +12,14 @@ Padding="0"
 HasShadow="False"
 IsClippedToBounds="True"
 Margin="10">
-                <Image Source="bild2.jpeg"
+                <Image Source="feedback.jpg"
     Aspect="AspectFill"
     HeightRequest="200"
                  HorizontalOptions="FillAndExpand"
    />
             </Frame>
 
-            <Label Text="Sportkurs"
+            <Label Text="Feedback"
        FontSize="24"
        FontAttributes="Bold"
        TextColor="#87cd8e"
@@ -31,6 +31,8 @@ Margin="10">
                    FontAttributes="Bold"
                    TextColor="DarkGreen"
                    HorizontalOptions="Center" />
+            
+            
 
             <!-- Geri Bildirim Sorusu -->
             <Label Text="Wie war Ihre Erfahrung?"
@@ -48,7 +50,7 @@ Margin="10">
                              BackgroundColor="Transparent"/>
                 <ImageButton Source="smile.png"
                              Clicked="OnEmojiButtonClicked"
-                             WidthRequest="40" HeightRequest="80"
+                             WidthRequest="65" HeightRequest="150"
                              BackgroundColor="Transparent"/>
                 <ImageButton Source="angry.png"
                              Clicked="OnEmojiButtonClicked"
@@ -88,24 +90,17 @@ Margin="10">
                     Margin="0,10,0,10"/>
 
             <!-- Kurs adı -->
-            <Label x:Name="KursNameLabel"
-                   FontSize="14"
-                   FontAttributes="Italic"
-                   TextColor="Gray"
-                   HorizontalOptions="Center"
-                   Margin="0,10,0,0"/>
+          
 
-            <!-- Diğer bağlantılar -->
-            <Label Text="Alle bisherigen Einträge"
-                   TextColor="Blue"
-                   FontSize="12"
-                   HorizontalOptions="Center" />
+            <Button Text="← Zurück zu Angebote"
+        Clicked="OnZurueckClicked"
+        FontSize="14"
+        TextColor="White"
+        BackgroundColor="CornflowerBlue"
+        HorizontalOptions="Center"
+        Padding="10,5"
+        CornerRadius="15"/>
 
-            <Label Text="← Zurück zu Angebote"
-                   TextColor="Blue"
-                   FontSize="12"
-                   HorizontalOptions="Center" />
-               
         </VerticalStackLayout>
     </ScrollView>
 
